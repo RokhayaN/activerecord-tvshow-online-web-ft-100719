@@ -3,5 +3,4 @@ class Show < ActiveRecord::Base
     show = Show.new
     Show.maximum("rating")
   end 
-
 end 
