@@ -12,10 +12,6 @@ class Show < ActiveRecord::Base
     Show.minimum("rating")
   end 
   
-  def Show::lowest_rating
-     Show.order(rating: :asc).first
-  end 
-  
   def Show::ratings_sum
     Show.sum("rating")
   end 
